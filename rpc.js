@@ -9,11 +9,11 @@ const WS_URL = Deno.env.get("WS_URL");
 
 const provider = new ethers.providers.WebSocketProvider(WS_URL);
 
-console.log("\ttime\tevent\tnumber\tsrc");
+console.log("\ttime\tevent\tnumber");
 
 provider.on("block", (blockNumber) => {
   console.log(
-    `\t${new Date().toISOString()}\tNewBlock\t${blockNumber}\t${WS_URL}`,
+    `\t${new Date().toISOString()}\tNewBlock\t${blockNumber}`,
   );
 });
 
