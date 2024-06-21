@@ -4,6 +4,13 @@ via TRPC `onAccountUpdate` subscription. Treat new block notification as baselin
 To trace TRPC, ensure that the server sends update on every block in `onAccountUpdate`,
 and not only when there are new transfers for a user.
 
+# Environment
+
+ - Daimo API server running on the same machine.
+ - RPC Provider same as one used on staging Daimo and in the same geo region (<5ms latency)
+ - Postgres database running in different datacenter but in close geo proximity (~20ms laty)
+
+
 # Collect data
 
 Run those commands in parallel
