@@ -18,7 +18,7 @@ Run those commands in parallel
 ```
 deno run -A --unsafely-ignore-certificate-errors rpc.js > data/rpc.tsv
 
-deno run -A api.ts > data/api.tsv
+deno run -A api.js > data/api.tsv
 
 deno run -A --unsafely-ignore-certificate-errors pg.js > data/pg.tsv
 ```
