@@ -1,3 +1,6 @@
+Measure latencies for Shovel indexing a new block and Daimo API pushing an update
+via TRPC `onAccountUpdate` subscription. Treat new block notification as baseline.
+
 # Collect data
 
 Run those commands in parallel
